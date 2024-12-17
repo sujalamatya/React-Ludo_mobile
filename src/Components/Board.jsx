@@ -17,7 +17,7 @@ export default function Board() {
             <div className="border border-gray-600"></div>
             <div className="border border-gray-600 bg-green-600"></div>
             <div className="border border-gray-600 bg-green-600"></div>
-            <div className="border border-gray-600"></div>
+            <div className="border border-gray-600 bg-gray-400"></div>
             <div className="border border-gray-600 bg-green-600"></div>
             <div className="border border-gray-600"></div>
             <div className="border border-gray-600"></div>
@@ -49,13 +49,13 @@ export default function Board() {
             <div className="border border-gray-600 bg-red-600"></div>
             <div className="border border-gray-600"></div>
             <div className="border border-gray-600"></div>
-            <div className="border border-gray-600"></div>
+            <div className="border border-gray-600 bg-gray-400"></div>
             <div className="border border-gray-600"></div>
             <div className="border border-gray-600"></div>
             <div className="border border-gray-600"></div>
           </div>
           <div className="h-[20%] w-[20%] mt-0 relative bg-gray-200 border border-black">
-            {/* FINISH */}
+            {/* FINISH all triangles in between*/}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[2.2rem] border-l-transparent border-r-[2.2rem] border-r-transparent border-t-[2.2rem] border-t-green-600"></div>
 
             {/* Right triangle */}
@@ -71,7 +71,7 @@ export default function Board() {
             <div className="border border-gray-600"></div>
             <div className="border border-gray-600"></div>
             <div className="border border-gray-600"></div>
-            <div className="border border-gray-600"></div>
+            <div className="border border-gray-600 bg-gray-400"></div>
             <div className="border border-gray-600"></div>
             <div className="border border-gray-600"></div>
             <div className="border border-gray-600 bg-yellow-400"></div>
@@ -103,7 +103,7 @@ export default function Board() {
             <div className="border border-gray-600"></div>
             <div className="border border-gray-600"></div>
             <div className="border border-gray-600 bg-blue-600"></div>
-            <div className="border border-gray-600"></div>
+            <div className="border border-gray-600 bg-gray-400"></div>
             <div className="border border-gray-600 bg-blue-600"></div>
             <div className="border border-gray-600 bg-blue-600"></div>
             <div className="border border-gray-600"></div>
