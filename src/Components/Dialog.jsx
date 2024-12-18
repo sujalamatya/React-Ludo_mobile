@@ -11,10 +11,10 @@ const DialogDemo = () => {
         <Dialog.Overlay className="fixed inset-0 bg-blackA6 data-[state=open]:animate-overlayShow" />
         <Dialog.Content className="fixed left-1/2 top-1/2 max-h-[85vh] w-[90vw] max-w-[450px] -translate-x-1/2 -translate-y-1/2 rounded-md bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none data-[state=open]:animate-contentShow">
           <Dialog.Title className="m-0 text-[17px] font-medium text-mauve12">
-            Ludo Game Settings
+            Waiting...
           </Dialog.Title>
           <Dialog.Description className="mb-5 mt-2.5 text-[15px] leading-normal text-mauve11">
-            Select number of players and the Betting amount
+            Waiting for players...
           </Dialog.Description>
 
           {/* Dropdown Menu for Players */}
@@ -36,6 +36,32 @@ const DialogDemo = () => {
               <option value="4">4</option>
             </select>
           </fieldset>
+
+          {/* Invite Players Section */}
+          <fieldset className="mb-[15px] flex items-center gap-5">
+            <label
+              className="w-[90px] text-right text-[15px] text-violet11"
+              htmlFor="invitePlayers"
+            >
+              Invite Players:
+            </label>
+            <input
+              className="inline-flex h-[35px] w-full flex-1 items-center justify-center rounded px-2.5 text-[15px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet8"
+              id="invitePlayers"
+              defaultValue="https://www.w3.org/Provider/Style/dummy.html"
+              readOnly
+            />
+          </fieldset>
+
+          {/* Invite More Button */}
+          <div className="flex justify-end mb-[15px]">
+            <button
+              className="inline-flex h-[35px] items-center justify-center rounded bg-green4 px-[15px] font-medium leading-none text-green11 hover:bg-green5 focus:shadow-[0_0_0_2px] focus:shadow-green7 focus:outline-none"
+              onClick={() => alert("Invite more players!")} // Example action
+            >
+              Invite More
+            </button>
+          </div>
 
           {/* Input for Bet Amount */}
           <fieldset className="mb-[15px] flex items-center gap-5">
